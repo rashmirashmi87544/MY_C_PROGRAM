@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    int x[]={10,20,30};
+    int*p=x;
+    p++;
+    printf("%d ",*p);
+}
