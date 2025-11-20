@@ -12,6 +12,6 @@ int main() {
        printf("it is a polindrome");
    }
    else{
-       printf("not a polindrom");
+       printf("not a polindrome");
    }
 }
