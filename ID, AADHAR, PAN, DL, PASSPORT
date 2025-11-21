@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    int id;
+    int PAN=1111;
+    int AADHAR =2222;
+    int APAAR =3333;
+    int DL=4444;
+    int passport=5555;
+    printf("enter your unique id number:");
+    scanf("%d",&id);
+    if (id== PAN)
+    printf("PAN verified\n");
+    else if (id==AADHAR)
+    printf("AADHAR verified\n");
+    else if (id==APAAR)
+    printf("APAAR verified\n");
+    else if (id==DL)
+    printf("DL verified\n");
+    else if (id== passport)
+    printf("passport verified\n");
+    else
+    printf("id not verified\n");
+    return 0;
+    
+}
