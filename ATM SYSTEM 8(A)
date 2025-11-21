@@ -1,0 +1,22 @@
+#include <stdio.h> 
+void swap(int *a, int *b) 
+ { 
+ int temp = *a; 
+ *a = *b; 
+ *b = temp; 
+}
+void main() 
+ { 
+ int balance1, balance2; 
+ printf("Enter balance for Account 1: "); 
+ scanf("%d", &balance1); 
+ printf("Enter balance for Account 2: "); 
+ scanf("%d", &balance2); 
+ printf("\nBefore Swapping:\n"); 
+ printf("Account 1 Balance: %d\n", balance1); 
+ printf("Account 2 Balance: %d\n", balance2); 
+ swap(&balance1, &balance2); 
+ printf("\nAfter Swapping:\n"); 
+ printf("Account 1 Balance: %d\n", balance1); 
+ printf("Account 2 Balance: %d\n", balance2); 
+ }
