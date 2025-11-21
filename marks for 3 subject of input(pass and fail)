@@ -1,0 +1,12 @@
+#include<stdio.h>
+int pass(int a, int b, int c){
+    return (a>=40 && b>=40 && c>=40);
+}
+int main() {
+    int m1,m2,m3;
+    scanf("%d %d %d", &m1,&m2,&m3);
+    if (pass(m1,m2,m3))
+    printf("pass");
+    else
+    printf("fail");
+}
