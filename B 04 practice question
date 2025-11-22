@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include<stdio.h>
+int main(){
+    char first[50]="rashmi", last[50]="raki", full[100];
+    int i=0,j=0,length=0,maxlength=15;
+    while(first[i] !='\0') {
+        full[length++]=first[i++];
+    }
+
+    while(last[j]!='\0')
+    {
+        full[length++]=last[j++];
+
+    }
+    full[length]='\0';
+    printf("full name:%s\n",full);
+    printf("length:%d\n",length);
+    if(length>20)
+    printf("name too long for screen.\n");
+    else
+    printf("name fits the screen.\n");
+    return 0;
+}
