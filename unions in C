@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    union rashu{
+        int age ;
+        float marks;
+    };
+    union rashu r;
+    r.age=19;
+    printf("%d\n", r.age);
+    r. marks=10.4;
+    printf("%f\n", r.marks);
+    return 0;
+}
