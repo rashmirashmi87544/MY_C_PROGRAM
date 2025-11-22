@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int n, i, key, found = 0;
+    printf("Enter number of books: ");
+    scanf("%d", &n);
+    int id[n];
+    printf("Enter book IDs:\n");
+    for(i=0;i<n;i++)
+        scanf("%d", &id[i]);
+    printf("Enter ID to search: ");
+    scanf("%d", &key);
+    for(i=0;i<n;i++)
+        if(id[i] == key) found = 1;
+    if(found) printf("Book Available");
+    else printf("Book Not Found");
+    return 0;
+}
